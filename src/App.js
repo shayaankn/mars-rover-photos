@@ -5,6 +5,7 @@ import PhotoResult from "./components/PhotoResult";
 import PhotoResultInfo from "./components/PhotoResultInfo";
 import "./App.css";
 // import "./index.css";
+// Commented out code
 
 const App = () => {
   const [photo, setPhoto] = useState(null);
