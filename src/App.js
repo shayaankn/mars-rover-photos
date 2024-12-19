@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import PhotoResult from "./components/PhotoResult";
 import PhotoResultInfo from "./components/PhotoResultInfo";
 import "./App.css";
+// import "./index.css";
 
 const App = () => {
   const [photo, setPhoto] = useState(null);
