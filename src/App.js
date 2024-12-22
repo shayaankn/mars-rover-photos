@@ -11,7 +11,7 @@ const App = () => {
   const [photo, setPhoto] = useState(null);
   const [info, setInfo] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasSearched, setHasSearched] = useState(false);
+  // const [hasSearched, setHasSearched] = useState(false);
   const [noResults, setNoResults] = useState(false);
 
   const fetchPhotos = async (sol) => {
@@ -19,7 +19,7 @@ const App = () => {
     setPhoto(null);
     setInfo(null);
     setIsLoading(true);
-    setHasSearched(true);
+    // setHasSearched(true);
     setNoResults(false);
 
     try {
