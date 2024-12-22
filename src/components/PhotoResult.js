@@ -21,7 +21,7 @@ const PhotoResult = ({ photo, isLoading, noResults }) => {
     <div id="photoResult">
       {photo ? (
         // <img src={photo.img_src} alt="Mars Rover Photo" />
-        <img src={photo.img_src} />
+        <img src={photo.img_src} alt="" />
       ) : null}
     </div>
   );
