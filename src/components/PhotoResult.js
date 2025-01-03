@@ -12,7 +12,7 @@ const PhotoResult = ({ photo, isLoading, noResults }) => {
   if (noResults) {
     return (
       <div id="photoResult">
-        <p>No photos available for this sol.</p>
+        <p>No photos available for this day.</p>
       </div>
     );
   }

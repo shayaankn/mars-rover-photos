@@ -4,27 +4,23 @@ import Form from "./components/Form";
 import PhotoResult from "./components/PhotoResult";
 import PhotoResultInfo from "./components/PhotoResultInfo";
 import "./App.css";
-// import "./index.css";
-// Commented out code
 
 const App = () => {
   const [photo, setPhoto] = useState(null);
   const [info, setInfo] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  // const [hasSearched, setHasSearched] = useState(false);
   const [noResults, setNoResults] = useState(false);
 
-  const fetchPhotos = async (sol) => {
+  const fetchPhotos = async (earthDate) => {
     const apiKey = "88ATa9tag5vTfCL4IexH6BfmhD1fENa9B90F1n03";
     setPhoto(null);
     setInfo(null);
     setIsLoading(true);
-    // setHasSearched(true);
     setNoResults(false);
 
     try {
       const response = await fetch(
-        `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${sol}&api_key=${apiKey}`
+        `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${earthDate}&api_key=${apiKey}`
       );
       const data = await response.json();
 
@@ -34,8 +30,8 @@ const App = () => {
         const randomPhoto = data.photos[Math.floor(Math.random() * data.photos.length)];
         setPhoto(randomPhoto);
         setInfo({
-          earth_date: randomPhoto.earth_date,
-          rover_name: randomPhoto.rover.name,
+          // earth_date: randomPhoto.earth_date,
+          // rover_name: randomPhoto.rover.name,
           camera_name: randomPhoto.camera.full_name,
         });
       }
