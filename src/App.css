@@ -29,8 +29,8 @@ body {
 
 @media (max-width: 992px) {
   #main-div {
-      max-width: 90vw;
-      max-height: 90vh;
+      max-width: 86vw;
+      max-height: 86vh;
       padding: 14px;
   }
 }
